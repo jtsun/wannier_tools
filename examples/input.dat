@@ -1,10 +1,10 @@
 &TB_FILE
-Hrfile = wannier90_hr.dat
+Hrfile = "wannier90_hr.dat"
 /
 
 
-&CONTROL
 !> bulk band structure calculation flag
+&CONTROL
 BulkBand_calc         = F
 BulkFS_calc           = F
 BulkGap_cube_calc     = F

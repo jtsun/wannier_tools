@@ -4,7 +4,6 @@ Hrfile = 'wannier90_hr.dat'
 
 
 &CONTROL
-!> bulk band structure calculation flag
 BulkBand_calc         = T
 BulkFS_calc           = T
 BulkGap_cube_calc     = T

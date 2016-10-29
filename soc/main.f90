@@ -139,12 +139,22 @@
         if(cpuid.eq.0)write(stdout, *)'<< End of calculating bulk band'
      endif
 
+     if (BulkFS_Plane_calc) then
+        if(cpuid.eq.0)write(stdout, *)' '
+        if(cpuid.eq.0)write(stdout, *)'>> Start of calculating the bulk FS in a k plane'
+        call now(time_start)
+        call fermisurface
+        call now(time_end)
+        call print_time_cost(time_start, time_end, 'BulkFS_Plane')
+        if(cpuid.eq.0)write(stdout, *)'<< End of calculating the bulk FS in a k plane'
+     endif
+
+
      if (BulkFS_calc) then
         if(cpuid.eq.0)write(stdout, *)' '
         if(cpuid.eq.0)write(stdout, *)'>> Start of calculating the bulk FS'
         call now(time_start)
-       !call fermisurface3D
-        call fermisurface
+        call fermisurface3D
         call now(time_end)
         call print_time_cost(time_start, time_end, 'BulkFS')
         if(cpuid.eq.0)write(stdout, *)'<< End of calculating the bulk FS'

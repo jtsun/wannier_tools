@@ -25,6 +25,7 @@
      !> control parameters
      logical :: BulkBand_calc
      logical :: BulkFS_calc
+     logical :: BulkFS_plane_calc
      logical :: BulkGap_cube_calc
      logical :: BulkGap_plane_calc
      logical :: SlabBand_calc
@@ -40,7 +41,7 @@
      logical :: BerryCurvature_calc
      logical :: EffectiveMass_calc
      
-     namelist / Control / BulkBand_calc, BulkFS_calc, BulkGap_plane_calc, &
+     namelist / Control / BulkBand_calc,BulkFS_calc,  BulkFS_Plane_calc, BulkGap_plane_calc, &
                           BulkGap_cube_calc, SlabBand_calc, WireBand_calc, &
                           SlabSS_calc, SlabArc_calc, SlabSpintexture_calc, &
                           WannierCenter_calc,BerryPhase_calc,BerryCurvature_calc, &

@@ -53,6 +53,7 @@
 
      BulkBand_calc         = .FALSE.
      BulkFS_calc           = .FALSE.
+     BulkFS_Plane_calc     = .FALSE.
      BulkGap_cube_calc     = .FALSE.
      BulkGap_plane_calc    = .FALSE.
      SlabBand_calc         = .FALSE.
@@ -87,6 +88,7 @@
         write(stdout, *) ">>>Control parameters: " 
         write(stdout, *) "BulkBand_calc       : ",  BulkBand_calc
         write(stdout, *) "BulkFS_calc         : ",  BulkFS_calc
+        write(stdout, *) "BulkFS_Plane_calc   : ",  BulkFS_Plane_calc
         write(stdout, *) "BulkGap_cube_calc   : ",  BulkGap_cube_calc
         write(stdout, *) "BulkGap_plane_calc  : ",  BulkGap_plane_calc
         write(stdout, *) "SlabBand_calc       : ",  SlabBand_calc
@@ -96,6 +98,9 @@
         write(stdout, *) "wanniercenter_calc  : ", wanniercenter_calc
         write(stdout, *) "BerryPhase_calc     : ", BerryPhase_calc
         write(stdout, *) "BerryCurvature_calc : ", BerryCurvature_calc
+        write(stdout, *) "Dos_calc            : ",  DOS_calc
+        write(stdout, *) "JDos_calc           : ",  JDOS_calc
+        write(stdout, *) "EffectiveMass_calc  : ", EffectiveMass_calc 
      endif
 
      !> set system parameters by default
