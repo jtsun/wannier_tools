@@ -1,8 +1,8 @@
-# Wannier_tools [![Build Status](https://travis-ci.org/quanshengwu/wannier_tools.svg?branch=master)](https://travis-ci.org/quanshengwu/wannier_tools)  [![codecov](https://codecov.io/gh/quanshengwu/wannier_tools/branch/master/graph/badge.svg)](https://codecov.io/gh/quanshengwu/wannier_tools)
+# WannierTools [![Build Status](https://travis-ci.org/quanshengwu/wannier_tools.svg?branch=master)](https://travis-ci.org/quanshengwu/wannier_tools)  [![codecov](https://codecov.io/gh/quanshengwu/wannier_tools/branch/master/graph/badge.svg)](https://codecov.io/gh/quanshengwu/wannier_tools)
 
-[**More examples in Wiki for Wannier_tools**](https://github.com/quanshengwu/wannier_tools/wiki)
+[**More examples in Wiki for WannierTools**](https://github.com/quanshengwu/wannier_tools/wiki)
 
-[**Full documentation for Wannier_tools**](http://quanshengwu.github.io/wannier_tools/)
+[**Full documentation for WannierTools**](http://quanshengwu.github.io/wannier_tools/)
 
 ![](https://lh3.googleusercontent.com/-NGkPcF7iUDY/Vy-34BbICBI/AAAAAAAAASY/e2YiWSnQJD4jpHh-kDWceThf2jKKSGAxwCCo/s526/wannier_tools-logo-purple.jpg)
 
