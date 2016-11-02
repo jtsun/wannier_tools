@@ -9,8 +9,6 @@
      !
      ! version     HmnR.data  contains soc
      !
-     ! mpi-version is not test yet, take you own risk.
-     !
      ! mpi-version is  tested , please report bugs to QSWU
      !
      ! Jan 25 2015 by Q.S.Wu at ETH Zurich 
