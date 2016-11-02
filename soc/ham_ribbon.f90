@@ -1,10 +1,12 @@
-! This subroutine is used to caculate Hamiltonian for 
-! ribbon system . 
-
-! History  
-!        4/15/2010 by Quansheng Wu
-! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
   subroutine ham_ribbon(k,Hamk_ribbon)
+     ! This subroutine is used to caculate Hamiltonian for 
+     ! ribbon system . 
+     ! 
+     ! History  
+     !
+     !        4/15/2010 by Quansheng Wu
+     !
+     ! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
   
      use para
      implicit none

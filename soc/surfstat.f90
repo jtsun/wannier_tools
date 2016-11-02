@@ -1,15 +1,16 @@
-!+---------+---------+---------+---------+---------+---------+--------+!
-! this subroutine is used to calculate surface state using             !
-! green's function method  ---  J.Phys.F.Met.Phys.15(1985)851-858      !
-! 
-! History:
-!         by Quan Sheng Wu on 4/20/2010                                !
-!            mpi version      4/21/2010
-!            change Kb to K=(Ka+Kb)/3 direction 4/22/2010
-!            Quansheng Wu on Jan 30 2015 at ETH Zurich
-! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
-!+---------+---------+---------+---------+---------+---------+--------+!
   subroutine surfstat
+     ! surfstat calculates surface state using             !
+     ! green's function method  ---  J.Phys.F.Met.Phys.15(1985)851-858      !
+     ! 
+     ! History:
+     ! 
+     !         by Quan Sheng Wu on 4/20/2010                                !
+     ! 
+     !            mpi version      4/21/2010
+     ! 
+     !            Quansheng Wu on Jan 30 2015 at ETH Zurich
+     ! 
+     ! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
 
      use wmpi
      use para

@@ -1,10 +1,12 @@
-! this subroutine is used to calculate surface state using             !
-! green's function method  ---  J.Phys.F.Met.Phys.15(1985)851-858      !
-! Using eq.(11) and eq.(13) (16), (17)
-! History:
-!         by Quan Sheng Wu on Oct/17/2012                                !
-!+---------+---------+---------+---------+---------+---------+--------+!
   subroutine surfgreen_1985(omega,GLL,GRR,GB,H00,H01,ones)
+     ! surfgreen_1985 calculates surface states using             
+     ! Green's function method  ---  J.Phys.F.Met.Phys.15(1985)851-858      
+     !
+     ! Using eq.(11) and eq.(13) (16), (17)
+     !
+     ! History:
+     !
+     !         by Quan Sheng Wu on Oct/17/2012                                
      use para
      implicit none
 
@@ -136,17 +138,19 @@
   end subroutine surfgreen_1985
 
 
-!+---------+---------+---------+---------+---------+---------+--------+!
-! this subroutine is used to calculate surface state using             !
-! green's function method  ---  J.Phys.F.Met.Phys.14(1984)1205-1215    !
-! Quick iterative scheme for the calculation of transfer matrices:
-! application to Mo (100) 
-! History:
-!         by Quan Sheng Wu on 4/20/2010                                !
-!            mpi version      4/21/2010
-!            little change to cpu version in Zurich Swiss Jan 25 2015
-!+---------+---------+---------+---------+---------+---------+--------+!
   subroutine surfgreen_1984(omega,GLL,GRR,H00,H01,ones)
+     ! surfgreen_1984 calculates surface state using             
+     ! Green's function method  ---  J.Phys.F.Met.Phys.14(1984)1205-1215    
+     ! Quick iterative scheme for the calculation of transfer matrices:
+     ! application to Mo (100) 
+     !
+     ! History:
+     !
+     !         by Quan Sheng Wu on 4/20/2010                                
+     !
+     !            mpi version      4/21/2010
+     !
+     !            little change to cpu version in Zurich Swiss Jan 25 2015
 
      use wmpi
      use para

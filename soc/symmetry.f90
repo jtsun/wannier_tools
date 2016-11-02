@@ -1,5 +1,6 @@
-!> set symmetry 
   subroutine symmetry
+     ! Set symmetry, not finished yet.
+     !
      use para
      implicit none
 

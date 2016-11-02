@@ -1,10 +1,10 @@
-!
-! this subroutine is used to read some paramters from
-! input.dat
-! constructed on 4/22/2010 by QS.Wu 
 
 
   subroutine readinput
+     ! Read in the control paramters from input.dat, 
+     ! and set default values if not specified in the input.dat
+     !
+     ! Constructed on 4/22/2010 by QS.Wu 
 
      use wmpi
      use para

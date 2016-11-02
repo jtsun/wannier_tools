@@ -1,6 +1,7 @@
-!> calculate density of state for 3D bulk system
-!> DOS(\omega)= \sum_k \delta(\omega- E(k))
 subroutine dos_sub
+!> calculate density of state for 3D bulk system
+!
+!> DOS(\omega)= \sum_k \delta(\omega- E(k))
 
    use wmpi
    use para
@@ -137,9 +138,10 @@ subroutine dos_sub
    return
 end subroutine dos_sub
 
-!> calculate joint density of state for 3D bulk system
-!> JDOS(\omega)= \sum_k (f_c(k)-f_v(k) \delta(\omega- Ec(k)+ Ev(k))
 subroutine joint_dos
+! calculate joint density of state for 3D bulk system
+!
+! JDOS(\omega)= \sum_k (f_c(k)-f_v(k) \delta(\omega- Ec(k)+ Ev(k))
 
    use wmpi
    use para
@@ -312,9 +314,10 @@ subroutine joint_dos
 end subroutine joint_dos
 
 
-!> calculate density of state and joint density of state for 3D bulk system
-!> JDOS(\omega)= \sum_k (f_c(k)-f_v(k) \delta(\omega- Ec(k)+ Ev(k))
 subroutine dos_joint_dos
+!  calculate density of state and joint density of state for 3D bulk system
+!
+!  JDOS(\omega)= \sum_k (f_c(k)-f_v(k) \delta(\omega- Ec(k)+ Ev(k))
 
    use wmpi
    use para
@@ -499,6 +502,7 @@ end subroutine dos_joint_dos
 
 
 function delta(eta, x)
+   !>  Lorentz expansion of the Delta function
    implicit none
    integer, parameter :: dp=kind(1d0)
    integer, parameter :: pi= 3.1415926535d0

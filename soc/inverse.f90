@@ -1,4 +1,6 @@
   subroutine inv(ndim,Amat)
+     ! A pack for Lapack subroutine zgesv to get the inverse of 
+     ! a generic complex matrix
 
 
      implicit none
@@ -57,8 +59,10 @@
      return
   end subroutine inv 
 
-  !> get the inverse of a real matrix
   subroutine inv_r(ndim,Amat)
+     ! A pack for Lapack subroutine zgesv to get the inverse of 
+     ! a generic real matrix
+
 
      implicit none
 

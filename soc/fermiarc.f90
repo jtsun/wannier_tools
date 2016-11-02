@@ -1,13 +1,12 @@
-!+---------+---------+---------+---------+---------+---------+--------+!
-! this subroutine is used to calculate surface state using             !
-! green's function method  ---  J.Phys.F.Met.Phys.15(1985)851-858      !
-! 
-! History:
-!         by Quan Sheng Wu on 4/20/2010                                !
-!            mpi version      4/21/2010
-!         Ca3PbO version     11/12/2011
-!+---------+---------+---------+---------+---------+---------+--------+!
   subroutine fermiarc
+     ! This subroutine calculates surface states using             
+     ! iterative Green's function method  ---  J.Phys.F.Met.Phys.15(1985)851-858      
+     !
+     ! History:
+     !
+     !         by Quan Sheng Wu on 4/20/2010                                
+     !
+     !            mpi version      4/21/2010
 
 
      use wmpi
@@ -362,11 +361,10 @@
   end subroutine fermiarc
 
 
-  !> calculation joint density of state 
-  !> refs :http://science.sciencemag.org/content/sci/suppl/2016/03/09/351.6278.1184.DC1/Inoue.SM.pdf
-
-  !> in this version, we also calculate the spin density jdos
   subroutine fermiarc_jdos
+     !> Calculation joint density of state 
+     !> refs :http://science.sciencemag.org/content/sci/suppl/2016/03/09/351.6278.1184.DC1/Inoue.SM.pdf
+     !> in this version, we also calculate the spin density jdos
 
 
      use wmpi

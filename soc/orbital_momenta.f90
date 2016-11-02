@@ -1,5 +1,9 @@
-! > calculate the orbital momenta for each band at Gamma point
   subroutine orbital_momenta(k, eigvec)
+     ! Calculate the orbital momenta for each band at Gamma point
+     ! 
+     ! 2016 by QuanSheng Wu @ ETHZ
+     !
+     ! wuquansheng@gmail.com
      use para
      implicit none
 

@@ -1,11 +1,11 @@
-! this subroutine is used to calculate spin texture of
-! the surface state 
-! 
-! constructed by QS.Wu on July/20/2010  10:26:13
-! constructed by QS.Wu on July/20/2010  10:26:13
-!> modified by QS.Wu on June/4/2016 in Jouvence Montreal Canada 
 
   subroutine spintext
+    ! spintext calculates spin texture of
+    ! the surface states using Green's function
+    ! 
+    ! Constructed by QS.Wu on July/20/2010  10:26:13
+    ! 
+    ! Modified by QS.Wu on June/4/2016 in Jouvence Montreal Canada 
      
     use para
     use wmpi

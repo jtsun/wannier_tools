@@ -1,7 +1,8 @@
-! calculate bulk's energy band using wannier TB method
-! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
 
   subroutine ek_bulk
+     ! Calculate bulk's energy bands using wannier TB method
+     !
+     ! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
 
      use wmpi
      use para
@@ -129,9 +130,9 @@
    end subroutine ek_bulk
 
 
-  ! calculate bulk's energy band using wannier TB method
-  !> calculate spin direction for each band and each kpoint
   subroutine ek_bulk_spin
+  ! Calculate bulk's energy band using wannier TB method
+  ! also calculate spin direction for each band and each kpoint
 
      use wmpi
      use para
@@ -292,6 +293,7 @@
    end subroutine ek_bulk_spin
 
    subroutine ek_bulk_fortomas
+     ! only for IrF4 project
 
      use wmpi
      use para
@@ -364,6 +366,7 @@
 
 
   subroutine ek_bulk_mirror_z
+     ! Use the eigenvalue of mirror z to label the energy bands
 
      use wmpi
      use para
@@ -524,8 +527,8 @@
 
 
 
-  !> calculate bulk band for a given mirror symmetry
   subroutine ek_bulk_mirror_x
+  !> calculate bulk band for a given mirror symmetry
 
      use wmpi
      use para

@@ -1,7 +1,8 @@
-!> This subroutine is used for calculating energy 
-!> dispersion with wannier functions
-! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
   subroutine ek_slab
+     !> This subroutine is used for calculating energy 
+     !> dispersion with wannier functions for 2D slab system
+     !
+     ! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
     
      use wmpi
      use para
@@ -183,10 +184,10 @@
   end subroutine ek_slab
 
 
+  subroutine ek_slab_b
   !> This subroutine is used for calculating energy dispersion
   !> with wannier functions in plane magnetic field 
   !> 
-  subroutine ek_slab_b
     
      use wmpi
      use para

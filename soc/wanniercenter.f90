@@ -1,7 +1,8 @@
-! this suboutine is used for wannier center calculation for slab system
-! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
-
    subroutine  wannier_center2D
+     ! This suboutine is used for wannier center calculation for slab system
+     ! 
+     ! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
+
       use para
       use wmpi
       implicit none
@@ -210,10 +211,10 @@
    end subroutine  wannier_center2D
 
 
-! this suboutine is used for wannier center calculation for slab system
-!> calculate z2 
-
    subroutine  wannier_center2D_alt
+      ! This suboutine is used for wannier center calculation for slab system
+      ! calculate z2 
+
       use para
       use wmpi
       implicit none
@@ -559,10 +560,10 @@
 
 
 
+   subroutine  wannier_center3D_plane_mirror_minus
    !> this suboutine is used for wannier center calculation for 3D system
    !> only for one plane, calculate mirror chern number. only choose the bands
    !> which have the same mirror eigenvalue
-   subroutine  wannier_center3D_plane_mirror_minus
       use para
       use wmpi
       implicit none
@@ -956,10 +957,10 @@
 
 
 
+   subroutine  wannier_center3D_plane_mirror_plus
    !> this suboutine is used for wannier center calculation for 3D system
    !> only for one plane, calculate mirror chern number. only choose the bands
    !> which have the same mirror eigenvalue
-   subroutine  wannier_center3D_plane_mirror_plus
       use para
       use wmpi
       implicit none
@@ -1317,10 +1318,10 @@
 
 
 
+   subroutine  wannier_center3D_plane
    !> this suboutine is used for wannier center calculation for 3D system
    !> only for one plane
 
-   subroutine  wannier_center3D_plane
       use para
       use wmpi
       implicit none
@@ -1650,9 +1651,9 @@
    end subroutine  wannier_center3D_plane
 
 
-! this suboutine is used for wannier center calculation for 3D system
 
    subroutine  wannier_center3D
+      ! this suboutine is used for wannier center calculation for 3D system
       use para
       use wmpi
       implicit none

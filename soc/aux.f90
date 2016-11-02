@@ -1,9 +1,9 @@
 !>> some auxilary subroutines for time or others
 
-!>> Convert the current wall-time into a real number
-!>  The unit is second.
-
   subroutine now(time_now)
+  !> Convert the current wall-time into a real number
+  !
+  !> The unit is second.
 
      use wmpi
      use para, only : dp
@@ -17,8 +17,8 @@
      return
   end subroutine now
 
-  !>  The unit is second.
   subroutine print_time_cost(time_start, time_end, subname)
+  !>  The unit is second.
 
      use wmpi
      use para, only : dp, stdout, cpuid
@@ -34,8 +34,8 @@
      return
   end subroutine print_time_cost
 
-  !> print header
   subroutine header
+  !> print header
      use wmpi
      use para, only : stdout, cpuid
      implicit none

@@ -1,8 +1,8 @@
-! This subroutine is used to caculate energy dispersion for 
-! slab Bi2Se3
-! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
 
   subroutine ek_ribbon
+     ! This subroutine is used to caculate energy dispersion 
+     ! for 1D wire system. 
+     ! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
 
      use wmpi
      use para

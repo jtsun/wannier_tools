@@ -1,6 +1,7 @@
-! calculate bulk's energy band using wannier TB method
-! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
   subroutine fermisurface3D
+     ! This subroutine calculates 3D fermi surface in the 1st BZ using wannier TB method
+     ! 
+     ! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
 
      use wmpi
      use para
@@ -116,8 +117,9 @@
 
 
 
-! calculate bulk's energy band using wannier TB method
   subroutine fermisurface
+     ! This subroutine calculates 3D fermi surface in the a fixed k plane
+     ! using wannier TB method
 
      use wmpi
      use para
@@ -264,8 +266,9 @@
    return
    end subroutine fermisurface
 
-!  calculate bulk's energy band using wannier TB method
    subroutine gapshape3D
+      ! This subroutine get the k points in the BZ at which the gap is smaller then
+      ! Gap_threshold
 
       use wmpi
       use para
@@ -427,8 +430,9 @@
    end subroutine gapshape3D
 
 
-!  calculate bulk's energy band using wannier TB method
    subroutine gapshape
+      ! This subroutine gets the gap at each k 
+      ! points on the k plane specified by user
 
       use wmpi
       use para
@@ -607,8 +611,8 @@
    end subroutine gapshape
 
 
-   !> get fermilevel for the given hamiltonian
    subroutine get_fermilevel
+      !> Calculate fermilevel for the given hamiltonian
       use wmpi
       use para
       implicit none
@@ -732,10 +736,8 @@
       return
    end subroutine get_fermilevel
 
-   !------------+------------+------------+------------+------------+--------+!
-   ! calculate the Fermi-Dirac distribution
-   !------------+------------+------------+------------+------------+--------+!
    function fermi(omega, Beta) result(value)
+      ! This function sets the Fermi-Dirac distribution
 
       use para
       implicit none

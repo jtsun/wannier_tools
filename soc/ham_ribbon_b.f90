@@ -1,11 +1,11 @@
-! This subroutine is used to caculate Hamiltonian for 
-! ribbon system .  
-! with magnetic field along x direction
-
-! History  
-!        4/15/2010 by Quansheng Wu
-! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
   subroutine ham_ribbon_b(bmag,k,Hamk_ribbon)
+     ! This subroutine is used to caculate Hamiltonian for 
+     ! ribbon system .  
+     ! with magnetic field along x direction
+     
+     ! History  
+     !        4/15/2010 by Quansheng Wu
+     ! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
   
      use para
      implicit none

@@ -1,6 +1,7 @@
-! complex version
-! a subroutine to calculate eigenvector and eigenvalue
   subroutine eigensystem_c(JOBZ,UPLO,N,A,W)
+     ! A pack of Lapack subroutine zheev, which is 
+     ! a subroutine to calculate eigenvector and eigenvalue for a 
+     ! complex hermite matrix
 
      use para, only : Dp, stdout
      implicit none
@@ -71,9 +72,10 @@
      return
   end subroutine eigensystem_c
 
-! real version
-! a subroutine to calculate eigenvector and eigenvalue
   subroutine eigensystem_r (JOBZ,UPLO,N,A,W)
+     ! A pack of Lapack subroutine dsyev, which is 
+     ! a subroutine to calculate eigenvector and eigenvalue for a 
+     ! real symmetric matrix
 
      use para, only : Dp, stdout
      implicit none
@@ -139,8 +141,9 @@
      return
   end subroutine eigensystem_r
 
-! a subroutine to calculate eigenvector and eigenvalue
   subroutine zgeev_pack(N, A, W)
+     ! a pack of Lapack subroutine zgeev, which is a subroutine to
+     ! calculate eigenvector and eigenvalue of a complex hermite matrix
 
      use para, only : Dp
      implicit none

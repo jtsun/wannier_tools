@@ -1,6 +1,6 @@
-! calculate bulk's energy band using wannier TB method
-! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
   subroutine ek_bulk2D
+     ! Calculate bulk's energy band using wannier TB method for a given k plane
+     ! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
 
      use wmpi
      use para
@@ -157,8 +157,8 @@
    end subroutine ek_bulk2D
 
 
-   !> using green's function
   subroutine ek_bulk2D_spin
+     !> using green's function
 
      use wmpi
      use para

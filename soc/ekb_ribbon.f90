@@ -1,8 +1,8 @@
-! This subroutine is used to caculate energy dispersion for 
-! slab Bi2Se3
-! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
 
   subroutine ekb_ribbon
+     ! This subroutine caculates energy dispersion for 
+     ! 1D wire system with axial magnetic field
+     ! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
     
      use para
      implicit none 
@@ -129,4 +129,4 @@
     !write(stdout,*) 'calculate energy band  done'
 
   return
-  end
+  end subroutine ekb_ribbon

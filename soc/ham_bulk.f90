@@ -1,10 +1,12 @@
-! This subroutine is used to caculate Hamiltonian for 
-! bulk system . 
-
-! History  
-!        May/29/2011 by Quansheng Wu
-! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
   subroutine ham_bulk(k,Hamk_bulk)
+     ! This subroutine caculates Hamiltonian for 
+     ! bulk system in the consideration of the atom's position
+     ! 
+     ! History  
+     !
+     !        May/29/2011 by Quansheng Wu
+     !
+     ! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
   
      use para
      implicit none
@@ -93,14 +95,13 @@
   return
   end  subroutine ham_bulk
 
-
-
-! This subroutine is used to caculate Hamiltonian for 
-! bulk system . 
-
-! History  
-!        May/29/2011 by Quansheng Wu
   subroutine ham_bulk_old(k,Hamk_bulk)
+     ! This subroutine caculates Hamiltonian for 
+     ! bulk system without the consideration of the atom's position
+     !
+     ! History  
+     !
+     !        May/29/2011 by Quansheng Wu
   
      use para
      implicit none

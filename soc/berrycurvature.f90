@@ -1,9 +1,13 @@
-!> calculate Berry curvature 
-!> ref : Physical Review B 74, 195118(2006)
-!> eqn (34)
-!> Sep. 22 2015 by Quansheng Wu @ ETHZ
-! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
   subroutine berry_curvarture
+     !> Calculate Berry curvature 
+     !
+     !> ref : Physical Review B 74, 195118(2006)
+     !
+     !> eqn (34)
+     !
+     !> Sep. 22 2015 by Quansheng Wu @ ETHZ
+     !
+     ! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
 
      use wmpi
      use para
@@ -273,6 +277,7 @@
   end subroutine berry_curvarture
 
   subroutine Fourier_R_to_k(k, ham)
+     !> Fourier transform the Hamiltonian from R space to k space
      use para, only: irvec, HmnR, Nrpts, ndegen, pi, zi, Num_wann, dp
      implicit none
 
@@ -293,6 +298,7 @@
   end subroutine Fourier_R_to_k
 
   subroutine Im_trace(ndim, A, tr)
+     !> Calculate trace only with the imaginary part of a matrix A with dimension ndim
      use para, only : dp
      implicit none
      integer :: ndim
@@ -310,6 +316,8 @@
   end subroutine Im_trace
 
   subroutine trace(ndim, A, tr)
+     !> Calculate trace of a matrix A with dimension ndim
+     use para, only : dp
      use para, only : dp
      implicit none
      integer :: ndim

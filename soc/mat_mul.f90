@@ -1,6 +1,6 @@
-! performs matrix-matrix multiply
-! C=A*B
   subroutine mat_mul(nmatdim,A,B,C)
+     ! Performs matrix-matrix multiply, 
+     ! C=A*B
      
      use para, only : Dp
       implicit none
@@ -28,12 +28,12 @@
      return
   end subroutine mat_mul
 
-  !> ZGESVD computes the singular value decomposition (SVD) for GE matrices
+  subroutine zgesvd_pack(M, A, U, S, VT)
+  !> ZGESVD computes the singular value decomposition (SVD) for GE matrices, 
   !> In this pack, we assume the matrix A is a square matrix, the dimension 
   !> of row and column are the same
-  !> A = U * SIGMA * conjugate-transpose(V)
+  !> A = U * SIGMA * conjugate-transpose(V), 
   !> VT= conjugate-transpose(V)
-  subroutine zgesvd_pack(M, A, U, S, VT)
 
      use para, only : Dp
      implicit none
@@ -86,11 +86,8 @@
   end subroutine zgesvd_pack
 
   subroutine zhpevx_pack(mat,ndim,eig,rot)
-    !                                                            !
-    ! Diagonalize the ndim x ndim  hermitian matrix 'mat' and      !
-    ! return the eigenvalues 'eig' and the unitary rotation 'rot'!
-    !                                                            !
-    !============================================================!
+    ! Diagonalize the ndim x ndim  hermitian matrix 'mat' and     
+    ! return the eigenvalues 'eig' and the unitary rotation 'rot' 
 
     use para, only : dp, stdout
 

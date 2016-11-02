@@ -1,6 +1,8 @@
-! calculate bulk's energy band using wannier TB method
-! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
   subroutine ek_bulk_polar
+     ! Calculate bulk's energy band using wannier TB method. 
+     ! This subroutine is very useful for nodal-line materials. 
+     ! You have to define the center, k plane and radius
+     ! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
 
      use wmpi
      use para
@@ -9,7 +11,7 @@
 
      integer :: ik, i, j, ia
      integer :: nkx, nky
-	  integer :: knv3
+     integer :: knv3
      integer :: ierr
      integer :: nktheta
      integer :: nkr
@@ -258,7 +260,7 @@
      if (Numoccupied> Num_wann ) stop ' Numoccupied should less than Num_wann'
 
      do ik= 1+cpuid, knv3, num_cpu
-	     if (cpuid==0) print * , 'ik' , ik
+        if (cpuid==0) print * , 'ik' , ik
 
         k1= k123(:, ik)
         !> from cartisen coordinate to direct coordinate
@@ -327,6 +329,9 @@
    end subroutine ek_bulk_polar
 
    subroutine cart_direct(k1, k2)
+      ! Change the k points from the Cartisen coordinates
+      ! to reciprocal lattice coordinates (direct). 
+      ! k1-> k2
       use para
       implicit none
       real(dp), intent(in) :: k1(3)
@@ -344,6 +349,9 @@
    end subroutine cart_direct
 
    subroutine direct_cart(k1, k2)
+      ! Change the k points from the reciprocal lattice coordinates (direct).
+      ! to the Cartisen coordinates
+      ! k1-> k2
       use para
       implicit none
       real(dp), intent(in) :: k1(3)

@@ -1,7 +1,10 @@
-! read data from HmnR.data   constructed by quansheng wu 4/2/2010
-! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
-
   subroutine readHmnR()
+     ! Read in the tight-binding model from wannier90_hr.dat 
+     !
+     ! Constructed by quansheng wu 4/2/2010
+     !
+     ! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
+
 
      use para
 

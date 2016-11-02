@@ -1,7 +1,6 @@
-! This subroutine is used to caculate energy dispersion for 
-! slab Bi2Se3
-
   subroutine psik()
+     ! Psik calculates the eigenvector for a given k point and energe band
+     ! for 2D slab system
 
      use para,only : Dp,Num_wann,Nslab, stdout, cpuid 
      
@@ -76,10 +75,9 @@
      
   end
 
-! This subroutine is used to caculate energy dispersion for 
-! bulk system
-
   subroutine psik_bulk()
+     ! Psik calculates the eigenvector for a given k point and energe band
+     ! for 3D bulk system
     
      use para,only : Dp,Num_wann, stdout, Numoccupied, cpuid
      implicit none 

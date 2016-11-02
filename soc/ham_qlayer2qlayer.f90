@@ -1,9 +1,8 @@
-! this subroutine is used to caculate Hamiltonian between
-! slabs  
-! 4/23/2010 by QS Wu
-! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
-
   subroutine ham_qlayer2qlayer(k,H00new,H01new)
+     ! This subroutine caculates Hamiltonian between
+     ! slabs  
+     ! 4/23/2010 by QS Wu
+     ! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
 
      use para
 
@@ -105,8 +104,11 @@
   return
   end subroutine ham_qlayer2qlayer
 
-  ! for slab
   subroutine ham_qlayer2qlayer2(k,Hij)
+     ! This subroutine caculates Hamiltonian between
+     ! slabs  
+     ! 4/23/2010 by QS Wu
+     ! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
 
      use para
 
@@ -162,6 +164,10 @@
   end subroutine ham_qlayer2qlayer2
 
   subroutine ham_qlayer2qlayerribbon(k,Hij)
+     ! This subroutine caculates Hamiltonian between
+     ! ribbon
+     ! 4/23/2010 by QS Wu
+     ! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
 
      use para
 
@@ -217,9 +223,9 @@
   end subroutine ham_qlayer2qlayerribbon
 
 
-  !> use Umatrix to get the new representation of a vector in new basis
-  !> R= a*R1+b*R2+c*R3= x*R1'+y*R2'+z*R3'
   subroutine latticetransform(a, b, c, x, y, z)
+     !> use Umatrix to get the new representation of a vector in new basis
+     !> R= a*R1+b*R2+c*R3= x*R1'+y*R2'+z*R3'
      use para
      implicit none
 

@@ -1,11 +1,16 @@
-  !> calculate landau levels in 3D system in special k line
-  !> fix B field
-  !> the magnetic field is in the a1 a2 plane
-  !> B= (B cos\theta, B sin\theta, 0)
-  !> construct on Dec 8 2015
-  !> By QuanSheng Wu at ETH Zurich Honggerberg
-! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
   subroutine landau_level_k
+     !> calculate landau levels in 3D system in special k line
+     !> fix B field
+     !
+     !> the magnetic field is in the a1 a2 plane
+     !
+     !> B= (B cos\theta, B sin\theta, 0)
+     !
+     !> construct on Dec 8 2015
+     !
+     !> By QuanSheng Wu at ETH Zurich Honggerberg
+     !
+     ! Copyright (c) 2010 QuanSheng Wu. All rights reserved.
      use para
      implicit none
 
@@ -123,9 +128,9 @@
      return
   end subroutine landau_level_k
 
-  !> calculate landau levels in 3D system for different B
-  !> fix k point, usually Gamma point
   subroutine landau_level_B
+     !> calculate landau levels in 3D system for different B
+     !> fix k point, usually Gamma point
      use para
      implicit none
 
@@ -245,9 +250,9 @@
 
   end subroutine landau_level_B
 
-  !> calculate hamiltonian for landau levels
-  !> consider the internal atom's position
   subroutine ham_3Dlandau(Ndimq, Nq, k, ham_landau)
+     !> calculate hamiltonian for landau levels
+     !> consider the internal atom's position
      use para
      implicit none
 
@@ -541,9 +546,9 @@
   end subroutine ham_3Dlandau
 
 
-  !> calculate hamiltonian for landau levels
-  !> don't consider the internal atom's position
   subroutine ham_3Dlandau2(Ndimq, Nq, k, ham_landau)
+     !> calculate hamiltonian for landau levels
+     !> don't consider the internal atom's position
      use para
      implicit none
 
